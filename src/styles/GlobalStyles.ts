@@ -1,5 +1,6 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
+import BG from "../assets/img/BG.svg";
 
 export const GlobalStyle = createGlobalStyle`
 *{
@@ -9,41 +10,12 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body{
-    overflow: hidden;
-    background:#000000 ;
-}
-
-.container{
-    display: flex;
-
-.left-container{
-    
     height: 100vh;
-    width: 20vw;
-    border: 2px solid red;
-
-    .logo{
-        color: white;
-        border: 2px solid blue;
-    }
-
-    .list{
-        color: white;
-        border: 2px solid white;
-    }
-
-    .LogOut{
-        color: white;
-        border: 2px solid purple;
-    }
-
-}
-
-.content{
-    height: 100vh;
-    width: 80vw;
+    width: 100vw;
     display: flex;
-    border: 2px solid green;
+    background-color:#000000 ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(${BG});
 }
-}
-`
+`;
