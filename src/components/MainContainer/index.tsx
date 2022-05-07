@@ -16,71 +16,51 @@ import Etherium from "../../assets/Crypto/Etherium.svg";
 export const MainContainer: React.FC = () => {
   return (
     <Container>
-      <div className="container">
-        <header>
-          <p className="text">Welcome Back,Arkhan!</p>
-          <div className="main-input">
-            <input type="text" placeholder="Campo de Pesquisa" />
-            <img src={Notification} alt="notification" />
-          </div>
-          <div className="profile">
-            <p>Evano</p>
-            <img src={Picture} alt="" />
-          </div>
-        </header>
-        <div className="content">
-          <div className="info">
-            <div className="item">
-              <img src={Money} alt="" />
-              <div className="data">
-                <div>Total assets</div>
-                <div>$ 87.743</div>
-              </div>
-            </div>
-            <div className="item">
-              <img src={Wallet} alt="" />
-              <div className="data">
-                <div>Total Deposits</div>
-                <div>$ 78,342</div>
-              </div>
-            </div>
-            <div className="item">
-              <img src={graphAPY} alt="" />
-              <div className="data">
-                <div>APY</div>
-                <div> + 12.3%</div>
-              </div>
-            </div>
-          </div>
-          <div className="graph">
-            <img src={Graph} alt="" />
-          </div>
+      <header>
+        <div className="left-header">
+          <p>Welcome Back, Arkhan!</p>
+          <input type="text" placeholder="Search" />
+          <img src={Notification} alt="" />
         </div>
+        <div className="profile-header">
+          <p>Evano</p>
+          <img src={Picture} alt="" />
+        </div>
+      </header>
+      <div className="Main-container">
+        <div className="content">
+          <div className="left-content">  
+          <div className="top-content">
+              <div className="item1">
+                <div className="identificators">
+                  <img src={Wallet} alt="" />
+                  Total Assets
+                </div>
+                <div className="identificators">
+                  <img src={Money} alt="" />
+                  Total Deposits
+                </div>
+                <div className="identificators">
+                  <img src={graphAPY} alt="" />
+                  APY
+                </div>
+              </div>
+         
 
-        <div className="table">
-          <div className="token">Tokens</div>
-          <div className="names">
-            <div>Name</div>
-            <div>Balance</div>
-            <div>Total Value</div>
-            <div>Trade</div>
-          </div>
-          <div className="table-data">
-            <div>
-              <img src={Bitcoin} alt="" />
-              Bitcon
+            <div className="graph">
+              <img src={Graph} alt="" />
             </div>
-            <div>0,04321</div>
-            <div>$2,340.32</div>
-            <button className="trade">Trade</button>
-          </div>
-          <div className="table-data">
-            <div>
-              <img src={Etherium} alt="" />
             </div>
-            <div>32,234</div>
-            <div>$5,340.32</div>
-            <button className="trade">Trade</button>
+
+            <div className="bottom-content">
+            <div className="item2">table container</div>
+          </div>
+          </div>
+
+
+          <div className="right-content">
+            <div className="item">progress container</div>
+            <div className="item">end container </div>
           </div>
         </div>
       </div>
